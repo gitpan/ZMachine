@@ -1,6 +1,6 @@
 package ZMachine;
 {
-  $ZMachine::VERSION = '0.003';
+  $ZMachine::VERSION = '0.004';
 }
 use strict;
 use warnings;
@@ -19,7 +19,7 @@ ZMachine - libraries for dealing with the Z-Machine
 
 =head1 VERSION
 
-version 0.003
+version 0.004
 
 =head1 OVERVIEW
 

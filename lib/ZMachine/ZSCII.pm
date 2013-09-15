@@ -1,6 +1,6 @@
 package ZMachine::ZSCII;
 {
-  $ZMachine::ZSCII::VERSION = '0.003';
+  $ZMachine::ZSCII::VERSION = '0.004';
 }
 use 5.14.0;
 use warnings;
@@ -220,7 +220,7 @@ sub zscii_to_unicode {
 
     Carp::croak(
       sprintf "no Unicode character available for ZSCII %#v05x", $char,
-    ) unless my $unicode_char = $self->{zscii}{ $char };
+    ) unless defined(my $unicode_char = $self->{zscii}{ $char });
 
     $unicode .= $unicode_char;
   }
@@ -374,7 +374,7 @@ ZMachine::ZSCII - an encoder/decoder for Z-Machine text
 
 =head1 VERSION
 
-version 0.003
+version 0.004
 
 =head1 OVERVIEW
 

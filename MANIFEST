@@ -6,6 +6,7 @@ META.yml
 Makefile.PL
 README
 dist.ini
+eg/zc
 lib/ZMachine.pm
 lib/ZMachine/ZSCII.pm
 t/00-compile.t
